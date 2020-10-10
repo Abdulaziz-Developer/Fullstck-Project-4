@@ -1,1 +1,379 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 /* أضف قواعد CSS هنا */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* html {
+  height: 100%;
+} */
+body {
+  font-family: "Lato", sans-serif;
+}
+/* --------------- Header ---------------*/
+header {
+  padding: 15px;
+  z-index: 1;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: baseline;
+}
+.Left {
+  display: flex;
+  justify-content: space-around;
+  width: 24%;
+  margin-left: 20px;
+}
+.nav-menu li {
+  padding: 15px;
+}
+.navbar-item {
+  text-decoration: none;
+  color: black;
+}
+.Right {
+  width: 6%;
+  margin-right: 20px;
+}
+.flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* --------------- Header ---------------*/
+/* --------------- Hero ---------------*/
+.Hero {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 650px;
+}
+.glasses {
+  position: absolute;
+  top: 20%;
+  left: 37%;
+  height: 40px;
+  transform: rotate(-45deg);
+}
+.HeroLeft {
+  width: 40%;
+  height: 100%;
+  background-image: url("/img/hero.png");
+  object-fit: contain;
+  margin-top: -80px;
+  z-index: -1;
+}
+.HeroLeft img {
+  width: 100%;
+  height: 100%;
+}
+.HeroRight {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.HeroFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 62%;
+}
+.Hero-Header {
+  color: #333333;
+  font-weight: bold;
+  font-size: 50px;
+  width: 30%;
+}
+.Hero-Para {
+  width: 50%;
+}
+.Products {
+  background-color: #333333;
+  width: 15%;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  padding: 15px 22px;
+}
+.Hero-Header,
+.Hero-Para,
+.Products {
+  margin-left: 66px;
+}
+/* --------------- Hero ---------------*/
+/* --------------- Items ---------------*/
+.TheProducts {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.Flex-Items {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+.Item {
+  margin-bottom: 30px;
+  transition: all 0.6s ease-in-out;
+  cursor: pointer;
+}
+.Item:hover {
+  transform: scale(1.1);
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.title-price {
+  margin-top: 9px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Open Sans", sans-serif;
+}
+.card-title {
+  font-size: 14px;
+}
+
+.MProducts {
+  margin-bottom: 20px;
+}
+.More-Products {
+  border: 1px solid black;
+  padding: 20px 35px;
+  color: black;
+  text-decoration: none;
+  transition: all 0.5s ease-in;
+}
+.More-Products:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.Navlink {
+  color: black;
+  text-decoration: none;
+}
+/* --------------- Items ---------------*/
+/* --------------- NewsLetter ---------------*/
+.NewsLetter {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.NewsLetter-form {
+  display: flex;
+  background-color: #ececec;
+  width: 70%;
+  height: 40%;
+}
+.newsletter-img {
+  width: 40%;
+  height: 100%;
+}
+.newsletter-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.NewsLetter-Field {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.NewsLetter-Field p {
+  font-size: 22px;
+  margin-bottom: 30px;
+  width: 50%;
+  padding-left: 20px;
+}
+.Searchbar {
+  border: 1px solid black;
+  padding: 10px 20px;
+}
+.Searchbar .search {
+  outline: 0;
+  border: 0;
+  background: transparent;
+  width: 240px;
+}
+.arrow {
+  cursor: pointer;
+}
+/* --------------- NewsLetter ---------------*/
+/* --------------- Details ---------------*/
+.DetailsPage {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.detailsContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.Details {
+  width: 33.3%;
+  display: flex;
+  flex-direction: column;
+
+  align-items: baseline;
+}
+.Price,
+.DetailTitle,
+.Detail-para,
+.ColorS,
+.AddToCart {
+  margin: 10px;
+}
+.ColorS {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+}
+.ColorTag {
+  font-weight: bold;
+  margin-right: 5px;
+}
+.Squares {
+  display: flex;
+  justify-content: space-evenly;
+}
+.FirstS {
+  padding: 13px;
+  background-color: palevioletred;
+  margin-right: 5px;
+}
+.Circle {
+  padding: 6px;
+  background-color: white;
+  border-radius: 50%;
+}
+.SecondS {
+  padding: 13px;
+  background-color: royalblue;
+  margin-right: 5px;
+}
+.ThirdS {
+  padding: 13px;
+  background-color: rgb(58, 58, 58);
+  margin-right: 5px;
+}
+.AddToCart {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+.Cart {
+  width: 19%;
+  text-align: center;
+  padding: 10px;
+}
+.AddButton {
+  background-color: rgb(58, 58, 58);
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 20px;
+  margin-left: 20px;
+  font-size: 16px;
+  border: none;
+}
+.Color-Section {
+  display: flex;
+}
+.BigPic {
+  width: 25%;
+  height: 100%;
+}
+.Small-Pic {
+  width: 4%;
+  height: 4%;
+  display: flex;
+  flex-direction: column;
+}
+.BigPic img {
+  width: 100%;
+  height: 100%;
+}
+.Small-Pic img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+/* --------------- Details ---------------*/
+/* --------------- Most Liked ---------------*/
+.MoreProducts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+.img-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  list-style-type: none;
+  padding: 30px;
+}
+.cartitems {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.checkOut {
+  border: 1px solid black;
+  padding: 20px;
+}
+.deleteBtn {
+  cursor: pointer;
+}
+.allitem {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f6f6f6;
+  padding: 20px;
+}
+.imgcart {
+  width: 5%;
+  height: 5%;
+}
+.cartitems {
+  padding: 20px;
+}
+/* --------------- Most Liked ---------------*/
+/* --------------- Footer ---------------*/
+footer {
+  width: 100%;
+  padding: 40px;
+}
+.fnav-menu {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  align-items: baseline;
+  color: #8d8d8d;
+}
+.fnav-menu .First {
+  display: flex;
+  justify-content: space-evenly;
+  width: 20%;
+}
+.fnav-menu .navbar-item {
+  color: #8d8d8d;
+}
+/* --------------- Footer ---------------*/
