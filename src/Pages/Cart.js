@@ -19,10 +19,8 @@ const Cart = (props) => {
   props.cart.forEach((value) => {
     let number = parseFloat(value.price.replace(/[^0-9.-]+/g, ""));
     number *= value.quantity;
-    quantity += value.quantity;
-    console.log(number);
+    quantity += Number(value.quantity);
     total += number;
-    console.log(total);
   });
 
   return (
